@@ -148,7 +148,7 @@ public class Biletomat{
         LocalDate tempDate;
         for(int i = 0; i < zakupioneBilety.size(); i++){
             tempDate = zakupioneBilety.get(i).getDataZakupu();
-            if(tempDate == date)
+            if(tempDate.equals(date))
                 System.out.println(tempDate);
         }
     }
